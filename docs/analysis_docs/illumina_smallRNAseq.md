@@ -1,7 +1,7 @@
 # Illumina smallRNAseq
 
 Created: 2022/07/20 16:07:39
-Last modified: 2022/07/20 16:37:09
+Last modified: 2022/07/20 16:52:04
 
 - **Aim:** This document documents/describes running a minimal test on [Illumina small RNAseq](https://www.illumina.com/techniques/sequencing/rna-sequencing/small-rna-seq.html) data
 - **Prerequisite software:**
@@ -50,7 +50,7 @@ sbatch ./scripts/illumina_smallRNAseq/concussion_sncrna/01_merge_fastq.sh
 
 Run [smrnaseq](https://github.com/nf-core/smrnaseq)
 
-See my samplesheet at [./config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv), my script at [./scripts/03_smrnaseq_pipeline_run/01_smrnaseq_pipeline_run.sh](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/scripts/03_smrnaseq_pipeline_run/01_smrnaseq_pipeline_run.sh) and my conda env at [./scripts/envs/conda.nextflow.22.04.0.yml](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/scripts/envs/conda.nextflow.22.04.0.yml)
+See my samplesheet at [./config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv), my script at [./scripts/illumina_smallRNAseq/concussion_sncrna/02_smrnaseq_pipeline_run.sh](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/scripts/illumina_smallRNAseq/concussion_sncrna/02_smrnaseq_pipeline_run.sh) and my conda env at [./scripts/envs/conda.nextflow.22.04.0.yml](https://github.com/leahkemp/hg_compute_resource_requirements/blob/main/scripts/envs/conda.nextflow.22.04.0.yml)
 
 Run script
 

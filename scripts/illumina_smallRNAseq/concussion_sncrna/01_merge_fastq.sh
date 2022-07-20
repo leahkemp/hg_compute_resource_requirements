@@ -4,7 +4,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
-#SBATCH --job-name="merge_fastq"
+#SBATCH --job-name="01_merge_fastq"
 #SBATCH --output="./logs/illumina_smallRNAseq/concussion_sncrna/slurm-%j-%x.out"
 
 # configure file paths

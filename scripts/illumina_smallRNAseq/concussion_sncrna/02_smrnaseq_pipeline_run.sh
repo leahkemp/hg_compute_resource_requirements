@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition prod
-#SBATCH --job-name=smrnaseq_pipeline_run
+#SBATCH --job-name=02_smrnaseq_pipeline_run
 #SBATCH --time=12:00:00
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 16
@@ -40,7 +40,7 @@ nextflow -log $project_dir/logs/illumina_smallRNAseq/concussion_sncrna/smrnaseq_
 -with-trace \
 -with-dag \
 -work-dir $project_dir/tmp/concussion_smrnaseq/ \
---input $project_dir/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv\
+--input $project_dir/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv \
 --outdir $project_dir/results/illumina_smallRNAseq/concussion_sncrna/smrnaseq_pipeline_run/ \
 --protocol nextflex \
 --mirtrace_protocol nextflex \

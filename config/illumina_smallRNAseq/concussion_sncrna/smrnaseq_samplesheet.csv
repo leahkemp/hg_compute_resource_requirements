@@ -1,5 +1,5 @@
 sample,fastq_1
-CTRL_01_A,./fastq/CTRL_01_A.fastq.gz
-CTRL_02_A,./fastq/CTRL_02_A.fastq.gz
-RUGBY_01_A,./fastq/RUGBY_01_A.fastq.gz
-RUGBY_01_B,./fastq/RUGBY_01_B.fastq.gz
+CTRL_01_A,./fastq/concussion_sncrna/CTRL_01_A.fastq.gz
+CTRL_02_A,./fastq/concussion_sncrna/CTRL_02_A.fastq.gz
+RUGBY_01_A,./fastq/concussion_sncrna/RUGBY_01_A.fastq.gz
+RUGBY_01_B,./fastq/concussion_sncrna/RUGBY_01_B.fastq.gz
