@@ -18,6 +18,8 @@ Minimal tests for the amount of compute resources required for analysing human g
 
 - Temporary space requirements eg. for pipeline runs
 
+## To do
+
 Things that would reduce the temporary space demands:
 
-- [] establishing readonly permissions on human genomics raw data so I don't make a copy of the data on scratch to analyse (I currently do this to reduce the chance of damaging raw data)
+- [ ] establishing readonly permissions on human genomics raw data so I don't make a copy of the data on scratch to analyse (I currently do this to reduce the chance of damaging raw data)
