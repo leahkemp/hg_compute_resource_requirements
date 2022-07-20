@@ -10,6 +10,14 @@ Minimal tests for the amount of compute resources required for analysing human g
 - [Illumina whole genome sequencing (WGS)](https://www.illumina.com/techniques/sequencing/dna-sequencing/whole-genome-sequencing.html)
 - [Nanopore whole genome sequencing (WGS)](https://nanoporetech.com/applications/whole-genome-sequencing)
 
+## Tests
+
+- [Illumina RNAseq](./docs/analysis_docs/illumina_RNAseq.md)
+- [Illumina small RNAseq](./docs/analysis_docs/illumina_smallRNAseq.md)
+- [Illumina whole exome sequencing (WES)](./docs/analysis_docs/illumina_WES.md)
+- [Illumina whole genome sequencing (WGS)](./docs/analysis_docs/illumina_WGS.md)
+- [Nanopore whole genome sequencing (WGS)](./docs/analysis_docs/nanopore_WGS.md)
+
 ## ESR human genomics datasets
 
 - [Datasets](./docs/datasets/datasets.md)

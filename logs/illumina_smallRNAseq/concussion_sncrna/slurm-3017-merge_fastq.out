@@ -1,0 +1,25 @@
+rm: cannot remove ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging’: Directory not empty
+
+Copying fastq's to staging location
+
+
+Renaming fastq files
+
+
+Merge fastq files
+
+
+Merging R1 for sample:
+CTRL_02_A
+
+
+Merging R1 for sample:
+RUGBY_01_A
+
+
+Merging R1 for sample:
+RUGBY_01_B
+
+
+Cleaning up
+

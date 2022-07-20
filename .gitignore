@@ -1,0 +1,10 @@
+
+fastq/
+
+fastq_raw/
+
+results/
+
+.nextflow/
+
+tmp/
