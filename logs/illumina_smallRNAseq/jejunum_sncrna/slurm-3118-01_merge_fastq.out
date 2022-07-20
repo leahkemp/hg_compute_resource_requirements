@@ -1,0 +1,13 @@
+
+Copying fastq's to staging location
+
+
+Renaming fastq files
+
+mv: ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J620_CCP2LANXX_CCGTCC_L002_R1.fastq.gz’ and ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J620_CCP2LANXX_CCGTCC_L002_R1.fastq.gz’ are the same file
+mv: ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J631_CCP2LANXX_AGTTCC_L002_R1.fastq.gz’ and ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J631_CCP2LANXX_AGTTCC_L002_R1.fastq.gz’ are the same file
+mv: ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J633_CCP2LANXX_ATGTCA_L002_R1.fastq.gz’ and ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J633_CCP2LANXX_ATGTCA_L002_R1.fastq.gz’ are the same file
+mv: ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J639_CCP2LANXX_AGTCAA_L001_R1.fastq.gz’ and ‘/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/staging/J639_CCP2LANXX_AGTCAA_L001_R1.fastq.gz’ are the same file
+
+Cleaning up
+

@@ -1,0 +1,632 @@
+Jul-20 16:53:15.490 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.519 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: ProxyConfig[protocol=https; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.519 [main] DEBUG nextflow.cli.Launcher - Setting FTP proxy: ProxyConfig[protocol=ftp; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.520 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.520 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: ProxyConfig[protocol=https; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.520 [main] DEBUG nextflow.cli.Launcher - Setting ftp proxy: ProxyConfig[protocol=ftp; host=proxyforservers.esr.cri.nz; port=3128]
+Jul-20 16:53:15.520 [main] DEBUG nextflow.cli.Launcher - $> nextflow -log /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/logs/illumina_smallRNAseq/concussion_sncrna/smrnaseq_pipeline_run.log run nf-core/smrnaseq -r 2.0.0 -profile singularity -with-report -with-timeline -with-trace -with-dag -work-dir /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ --input /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv --outdir /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/results/illumina_smallRNAseq/concussion_sncrna/smrnaseq_pipeline_run/ --protocol nextflex --mirtrace_protocol nextflex --genome GRCh38 --mirtrace_species hsa --min_length 17
+Jul-20 16:53:15.570 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.0
+Jul-20 16:53:16.645 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/smrnaseq.git
+Jul-20 16:53:16.661 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/smrnaseq.git
+Jul-20 16:53:17.727 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/nextflow.config
+Jul-20 16:53:17.729 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/nextflow.config
+Jul-20 16:53:17.744 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Jul-20 16:53:18.081 [main] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Jul-20 16:53:18.097 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-20 16:53:18.099 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-20 16:53:18.103 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-20 16:53:18.108 [main] DEBUG nextflow.plugin.PluginsFacade - Using Default plugins manager
+Jul-20 16:53:19.361 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, genotoul, alice, mjolnir_globe, uppmax, abims, nihbiowulf, nu_genomics, oist, sahmri, mpcdf, leicester, lugh, vsc_ugent, sage, cambridge, unibe_ibu, vai, podman, czbiohub_aws, jax, cheaha, ccga_med, test, test_no_genome, google, computerome, seg_globe, sanger, pasteur, test_full, eddie, azurebatch, bi, bigpurple, cedars, docker, gis, eva, utd_ganymede, charliecloud, fgcz, conda, singularity, icr_davros, munin, rosalind, prince, hasta, hebbe, cfc, utd_sysbio, uzh, debug, genouest, cbe, ebc, ccga_dx, crick, marvin, phoenix, biohpc_gen, shifter, awsbatch, uct_hpc, imperial, maestro, aws_tower, binac]
+Jul-20 16:53:19.421 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/smrnaseq` [elated_raman] DSL2 - revision: d1299b132a [2.0.0]
+Jul-20 16:53:19.422 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/lkemp/.nextflow/plugins; core-plugins: nf-amazon@1.7.1,nf-azure@0.13.1,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
+Jul-20 16:53:19.424 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jul-20 16:53:19.432 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-20 16:53:19.432 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-20 16:53:19.435 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Jul-20 16:53:19.446 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-20 16:53:19.524 [main] DEBUG nextflow.Session - Session uuid: 8c908037-7e16-43ec-97d3-a512a2fbe6be
+Jul-20 16:53:19.524 [main] DEBUG nextflow.Session - Run name: elated_raman
+Jul-20 16:53:19.525 [main] DEBUG nextflow.Session - Executor pool size: 72
+Jul-20 16:53:19.586 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 22.04.0 build 5697
+  Created: 23-04-2022 18:00 UTC (24-04-2022 06:00 NZDT)
+  System: Linux 3.10.0-957.5.1.el7.x86_64
+  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 11.0.15-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 66910@kscprod-bio1 [10.1.107.101]
+  CPUs: 72 - Mem: 503.1 GB (22.8 GB) - Swap: 4 GB (0)
+Jul-20 16:53:19.621 [main] DEBUG nextflow.Session - Work-dir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq [nfs]
+Jul-20 16:53:19.640 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jul-20 16:53:19.655 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-20 16:53:19.759 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-20 16:53:19.779 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 73; maxThreads: 1000
+Jul-20 16:53:19.898 [main] DEBUG nextflow.Session - Session start invoked
+Jul-20 16:53:19.905 [main] DEBUG nextflow.trace.TraceFileObserver - Flow starting -- trace file: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/results/illumina_smallRNAseq/concussion_sncrna/smrnaseq_pipeline_run/pipeline_info/execution_trace_2022-07-20_16-53-19.txt
+Jul-20 16:53:19.921 [main] DEBUG nextflow.Session - Using default localLib path: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/lib
+Jul-20 16:53:19.925 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/lib
+Jul-20 16:53:19.925 [main] DEBUG nextflow.Session - Adding to the classpath library: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/lib/nfcore_external_java_deps.jar
+Jul-20 16:53:21.093 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-20 16:53:21.315 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/smrnaseq v2.0.0[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision           : [0;32m2.0.0[0m
+  [0;34mrunName            : [0;32melated_raman[0m
+  [0;34mcontainerEngine    : [0;32msingularity[0m
+  [0;34mlaunchDir          : [0;32m/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements[0m
+  [0;34mworkDir            : [0;32m/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq[0m
+  [0;34mprojectDir         : [0;32m/home/lkemp/.nextflow/assets/nf-core/smrnaseq[0m
+  [0;34muserName           : [0;32mlkemp[0m
+  [0;34mprofile            : [0;32msingularity[0m
+  [0;34mconfigFiles        : [0;32m/home/lkemp/.nextflow/assets/nf-core/smrnaseq/nextflow.config[0m
+
+[1mInput/output options[0m
+  [0;34minput              : [0;32m/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/config/illumina_smallRNAseq/concussion_sncrna/smrnaseq_samplesheet.csv[0m
+  [0;34mprotocol           : [0;32mnextflex[0m
+  [0;34moutdir             : [0;32m/NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/results/illumina_smallRNAseq/concussion_sncrna/smrnaseq_pipeline_run/[0m
+
+[1mReference genome options[0m
+  [0;34mgenome             : [0;32mGRCh38[0m
+  [0;34mmirtrace_species   : [0;32mhsa[0m
+
+[1mTrimming options[0m
+  [0;34mclip_r1            : [0;32m0[0m
+  [0;34mthree_prime_clip_r1: [0;32m0[0m
+  [0;34mmirtrace_protocol  : [0;32mnextflex[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/smrnaseq for your analysis please cite:
+
+* The pipeline
+  https://zenodo.org/badge/latestdoi/140590861
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/smrnaseq/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
+Jul-20 16:53:27.851 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Jul-20 16:53:27.854 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK` matches process NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Jul-20 16:53:27.869 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:27.870 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:27.875 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-20 16:53:27.882 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=72; memory=503.1 GB; capacity=72; pollInterval=100ms; dumpInterval=5m
+Jul-20 16:53:28.075 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:CAT_FASTQ
+Jul-20 16:53:28.075 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_FASTQ` matches process NFCORE_SMRNASEQ:SMRNASEQ:CAT_FASTQ
+Jul-20 16:53:28.078 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.078 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.109 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN
+Jul-20 16:53:28.109 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MIRTRACE_RUN` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN
+Jul-20 16:53:28.110 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.110 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.122 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC
+Jul-20 16:53:28.123 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:FASTQC_TRIMGALORE:FASTQC` matches process NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC
+Jul-20 16:53:28.124 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.124 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.137 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE
+Jul-20 16:53:28.137 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:FASTQC_TRIMGALORE:TRIMGALORE` matches process NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE
+Jul-20 16:53:28.139 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.140 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.152 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE
+Jul-20 16:53:28.153 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE
+Jul-20 16:53:28.154 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.154 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.161 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE
+Jul-20 16:53:28.162 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE
+Jul-20 16:53:28.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.162 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.168 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN
+Jul-20 16:53:28.168 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN
+Jul-20 16:53:28.170 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.170 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.178 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN
+Jul-20 16:53:28.178 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN
+Jul-20 16:53:28.182 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.182 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.193 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_MATURE
+Jul-20 16:53:28.194 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.194 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.200 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_HAIRPIN
+Jul-20 16:53:28.201 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.201 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.214 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE
+Jul-20 16:53:28.216 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE
+Jul-20 16:53:28.217 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.217 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.230 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN
+Jul-20 16:53:28.231 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN
+Jul-20 16:53:28.232 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.232 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.241 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT
+Jul-20 16:53:28.241 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:SAMTOOLS_SORT` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT
+Jul-20 16:53:28.242 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.242 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.252 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX
+Jul-20 16:53:28.254 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.254 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.277 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:28.278 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:28.279 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.279 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.290 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:28.291 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:28.292 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.292 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.300 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:28.301 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:28.301 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.301 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT
+Jul-20 16:53:28.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:SAMTOOLS_SORT` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT
+Jul-20 16:53:28.313 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.313 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.318 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX
+Jul-20 16:53:28.319 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.319 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.330 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:28.330 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:28.331 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.331 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.335 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:28.336 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:28.336 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.336 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.342 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:28.343 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_.*:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:28.343 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.343 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.355 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC
+Jul-20 16:53:28.355 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:EDGER_QC` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC
+Jul-20 16:53:28.356 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.356 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.362 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES
+Jul-20 16:53:28.362 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQCLUSTER_SEQUENCES` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES
+Jul-20 16:53:28.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.368 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER
+Jul-20 16:53:28.369 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER
+Jul-20 16:53:28.369 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.369 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.376 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT
+Jul-20 16:53:28.376 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MIRTOP_QUANT` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT
+Jul-20 16:53:28.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.382 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE
+Jul-20 16:53:28.383 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE
+Jul-20 16:53:28.383 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:28.383 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:28.391 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.7.1
+Jul-20 16:53:28.428 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.7.1' resolved
+Jul-20 16:53:28.428 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.7.1'
+Jul-20 16:53:28.488 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.7.1
+Jul-20 16:53:28.513 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Jul-20 16:53:28.514 [main] DEBUG nextflow.file.FileHelper - Started plugin 'nf-amazon' required to handle file: s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+Jul-20 16:53:28.528 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Jul-20 16:53:28.535 [main] DEBUG nextflow.file.FileHelper - AWS S3 config details: {max_error_retry=5}
+Jul-20 16:53:29.054 [main] DEBUG c.u.s3fs.S3FileSystemProvider - Using S3 multi-part downloader
+Jul-20 16:53:29.058 [main] DEBUG c.u.s3fs.ng.S3ParallelDownload - Creating S3 download thread pool: workers=10; chunkSize=10 MB; queueSize=10000; max-mem=1 GB; maxAttempts=5; maxDelay=1m 30s; pool-capacity=103
+Jul-20 16:53:29.094 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:INDEX_GENOME
+Jul-20 16:53:29.094 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEX_GENOME` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:INDEX_GENOME
+Jul-20 16:53:29.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.095 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.102 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BOWTIE_MAP_GENOME
+Jul-20 16:53:29.103 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BOWTIE_MAP_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BOWTIE_MAP_GENOME
+Jul-20 16:53:29.103 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.103 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.110 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT
+Jul-20 16:53:29.111 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT
+Jul-20 16:53:29.112 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.112 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.118 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX
+Jul-20 16:53:29.118 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX
+Jul-20 16:53:29.119 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.119 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.129 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:29.129 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:29.130 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.130 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.136 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:29.136 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:29.136 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.137 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.141 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:29.142 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:29.142 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.142 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.151 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ
+Jul-20 16:53:29.151 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.151 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.156 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_MAPPER
+Jul-20 16:53:29.156 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MIRDEEP2_MAPPER` matches process NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_MAPPER
+Jul-20 16:53:29.157 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.157 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.161 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_RUN
+Jul-20 16:53:29.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.162 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.297 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_SMRNASEQ:SMRNASEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Jul-20 16:53:29.297 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_DUMPSOFTWAREVERSIONS` matches process NFCORE_SMRNASEQ:SMRNASEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Jul-20 16:53:29.298 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.298 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.337 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_SMRNASEQ:SMRNASEQ:MULTIQC
+Jul-20 16:53:29.337 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_SMRNASEQ:SMRNASEQ:MULTIQC
+Jul-20 16:53:29.338 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-20 16:53:29.338 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-20 16:53:29.346 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: BOWTIE_MAP_SEQCLUSTER, FORMAT_MATURE, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, SEQCLUSTER_SEQUENCES, INDEX_MIRNA, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, BOWTIE_MAP_GENOME, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER, CAT_FASTQ, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, SAMTOOLS_STATS, INDEX_GENOME, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:MULTIQC, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES, NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ, NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE, MIRDEEP2_PIGZ, NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK, TRIMGALORE, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:INDEX_GENOME, EDGER_QC, NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, INDEX_HAIRPIN, FORMAT_FASTA_MIRNA, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_HAIRPIN, PARSE_MATURE, NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, BOWTIE_MAP_SEQ, NFCORE_SMRNASEQ:SMRNASEQ:CUSTOM_DUMPSOFTWAREVERSIONS, SAMTOOLS_INDEX, NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_MAPPER, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE, FASTQC, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC, MULTIQC, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX, FORMAT_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, SAMTOOLS_SORT, MIRDEEP2_MAPPER, PARSE_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_RUN, MIRTRACE_RUN, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT, BOWTIE_MAP_HAIRPIN, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX, PARSE_FASTA_MIRNA, SAMTOOLS_FLAGSTAT, SAMPLESHEET_CHECK, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_MATURE, MIRTOP_QUANT, BOWTIE_MAP_MATURE, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BOWTIE_MAP_GENOME, TABLE_MERGE, NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX, MIRDEEP2_RUN, INDEX_MATURE, SAMTOOLS_IDXSTATS, CUSTOM_DUMPSOFTWAREVERSIONS, NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT, NFCORE_SMRNASEQ:SMRNASEQ:CAT_FASTQ
+Jul-20 16:53:29.353 [main] DEBUG nextflow.Session - Ignite dataflow network (63)
+Jul-20 16:53:29.354 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Jul-20 16:53:29.355 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:CAT_FASTQ
+Jul-20 16:53:29.355 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN
+Jul-20 16:53:29.356 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC
+Jul-20 16:53:29.356 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE
+Jul-20 16:53:29.357 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE
+Jul-20 16:53:29.358 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE
+Jul-20 16:53:29.361 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN
+Jul-20 16:53:29.362 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN
+Jul-20 16:53:29.362 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_MATURE
+Jul-20 16:53:29.362 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_HAIRPIN
+Jul-20 16:53:29.364 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE
+Jul-20 16:53:29.364 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN
+Jul-20 16:53:29.365 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT
+Jul-20 16:53:29.365 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX
+Jul-20 16:53:29.365 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:29.365 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:29.365 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:INDEX_GENOME
+Jul-20 16:53:29.366 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BOWTIE_MAP_GENOME
+Jul-20 16:53:29.368 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_SORT
+Jul-20 16:53:29.368 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:SAMTOOLS_INDEX
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:GENOME_QUANT:BAM_SORT_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_MAPPER
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_RUN
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Jul-20 16:53:29.369 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_SMRNASEQ:SMRNASEQ:MULTIQC
+Jul-20 16:53:29.369 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jul-20 16:53:29.369 [main] DEBUG nextflow.Session - Session await
+Jul-20 16:53:29.605 [Actor Thread 57] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/python:3.8.3; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-python-3.8.3.img
+Jul-20 16:53:29.624 [Actor Thread 61] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/bin/check_samplesheet.py
+Jul-20 16:53:29.679 [Actor Thread 56] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.015 s; total time: 0.016 s
+Jul-20 16:53:29.705 [Actor Thread 56] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /tmp/e28429748859e2c27ad022e0032cde11.collect-file
+Jul-20 16:53:29.715 [Actor Thread 56] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-187207873353587387
+Jul-20 16:53:29.762 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:29.769 [Task submitter] INFO  nextflow.Session - [c3/d5043c] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK (smrnaseq_samplesheet.csv)
+Jul-20 16:53:31.348 [Actor Thread 46] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=4; maxSize=4; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jul-20 16:53:31.350 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://mirbase.org/ftp/CURRENT/hairpin.fa.gz to work dir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/stage/26/b80b0b38168289278c1fa006607d18/hairpin.fa.gz
+Jul-20 16:53:31.468 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: NFCORE_SMRNASEQ:SMRNASEQ:INPUT_CHECK:SAMPLESHEET_CHECK (smrnaseq_samplesheet.csv); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/c3/d5043cc7f27c9aae187a57c9658098]
+Jul-20 16:53:31.536 [Actor Thread 73] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/fastqc:0.11.9--0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-fastqc-0.11.9--0.img
+Jul-20 16:53:31.537 [Actor Thread 64] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/trim-galore:0.6.7--hdfd78af_0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-trim-galore-0.6.7--hdfd78af_0.img
+Jul-20 16:53:31.547 [Actor Thread 64] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/mirtrace:1.0.1--hdfd78af_1; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-mirtrace-1.0.1--hdfd78af_1.img
+Jul-20 16:53:31.578 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.578 [Task submitter] INFO  nextflow.Session - [f8/8df847] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_02_A)
+Jul-20 16:53:31.602 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.603 [Task submitter] INFO  nextflow.Session - [5b/442373] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_01_A)
+Jul-20 16:53:31.603 [Actor Thread 50] DEBUG nextflow.util.CacheHelper - [WARN] Unknown hashing type: class nextflow.util.MemoryUnit
+Jul-20 16:53:31.620 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.620 [Task submitter] INFO  nextflow.Session - [aa/28d8d7] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_B)
+Jul-20 16:53:31.636 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.636 [Task submitter] INFO  nextflow.Session - [45/08e4f0] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_A)
+Jul-20 16:53:31.653 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.653 [Task submitter] INFO  nextflow.Session - [66/ce6a1b] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN
+Jul-20 16:53:31.688 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.689 [Task submitter] INFO  nextflow.Session - [96/dcc364] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_01_A)
+Jul-20 16:53:31.707 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.707 [Task submitter] INFO  nextflow.Session - [ca/4088b6] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_A)
+Jul-20 16:53:31.720 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:31.721 [Task submitter] INFO  nextflow.Session - [13/6bf615] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_B)
+Jul-20 16:53:32.249 [FileTransfer-3] DEBUG nextflow.file.FilePorter - Copying foreign file https://mirbase.org/ftp/CURRENT/mature.fa.gz to work dir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/stage/d0/508d0a655ff6a6b2c4ba1282041b86/mature.fa.gz
+Jul-20 16:53:33.350 [Actor Thread 46] INFO  nextflow.file.FilePorter - Staging foreign file: https://mirbase.org/ftp/CURRENT/hairpin.fa.gz
+Jul-20 16:53:34.248 [Actor Thread 68] INFO  nextflow.file.FilePorter - Staging foreign file: https://mirbase.org/ftp/CURRENT/mature.fa.gz
+Jul-20 16:53:35.458 [Actor Thread 57] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/seqkit:2.0.0--h9ee0642_0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-seqkit-2.0.0--h9ee0642_0.img
+Jul-20 16:53:35.736 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:35.737 [Task submitter] INFO  nextflow.Session - [b8/5a3589] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN
+Jul-20 16:53:36.755 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_HAIRPIN; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/b8/5a35891b57c0a9ea3a0878c290a883]
+Jul-20 16:53:36.763 [Actor Thread 68] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/fastx_toolkit:0.0.14--he1b5a44_8; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-fastx_toolkit-0.0.14--he1b5a44_8.img
+Jul-20 16:53:36.765 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:36.765 [Task submitter] INFO  nextflow.Session - [5f/e7fd46] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE
+Jul-20 16:53:37.506 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:PARSE_MATURE; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/5f/e7fd463addc8cb7ab505a53d177949]
+Jul-20 16:53:37.515 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:37.515 [Task submitter] INFO  nextflow.Session - [ed/262f22] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN (hairpin.fa_igenome.fa)
+Jul-20 16:53:38.151 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_HAIRPIN (hairpin.fa_igenome.fa); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ed/262f22cf04027d31282ef84e84dbf2]
+Jul-20 16:53:38.164 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:38.164 [Task submitter] INFO  nextflow.Session - [39/d7bec2] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE (mature.fa_igenome.fa)
+Jul-20 16:53:38.169 [Actor Thread 46] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/bowtie:1.3.0--py38hcf49a77_2; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-bowtie-1.3.0--py38hcf49a77_2.img
+Jul-20 16:53:38.599 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:FORMAT_MATURE (mature.fa_igenome.fa); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/39/d7bec225af83dd0995f1d3e0a4f994]
+Jul-20 16:53:38.609 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:38.610 [Task submitter] INFO  nextflow.Session - [34/60445c] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_HAIRPIN
+Jul-20 16:53:40.292 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_HAIRPIN; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/34/60445ccefcd27bd5c9a8ec7e79d873]
+Jul-20 16:53:40.301 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:53:40.302 [Task submitter] INFO  nextflow.Session - [67/f862a0] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_MATURE
+Jul-20 16:53:41.833 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:INDEX_MATURE; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/67/f862a0792c0f25d4e3bce96e66285f]
+Jul-20 16:53:45.393 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa to work dir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/stage/2a/64ca45f24dcd2e1913f7bd155a701c/genome.fa
+Jul-20 16:53:47.393 [Actor Thread 72] INFO  nextflow.file.FilePorter - Staging foreign file: s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+Jul-20 16:53:49.726 [FileTransfer-1] DEBUG c.u.s3fs.S3FileSystemProvider - S3 parallel download with direct buffer: s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/WholeGenomeFasta/genome.fa
+Jul-20 16:58:28.086 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 8 -- submitted tasks are shown below
+~> TaskHandler[id: 8; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_02_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/f8/8df847a1f873bb776e6b5d026957ec]
+~> TaskHandler[id: 6; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_01_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/5b/4423732fca21289243e966c65deab4]
+~> TaskHandler[id: 12; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_B); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/aa/28d8d7d7948bfd7f21626c747b5bf5]
+~> TaskHandler[id: 10; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/45/08e4f0070b58f123f9a85d39eb1da0]
+~> TaskHandler[id: 13; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN; status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/66/ce6a1b2321707a3e7d505d59b9e132]
+~> TaskHandler[id: 5; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_01_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/96/dcc36414ee6cb290d426468fd3a783]
+~> TaskHandler[id: 9; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ca/4088b6087ad41edacd4176b12a21e6]
+~> TaskHandler[id: 11; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_B); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/13/6bf615cf2f4b31a682474757555a6d]
+Jul-20 16:58:31.896 [Task submitter] DEBUG n.processor.TaskPollingMonitor - %% executor local > tasks in the submission queue: 1 -- tasks to be submitted are shown below
+~> TaskHandler[id: 7; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_02_A); status: NEW; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/db/a1edd91eca052dc9768f150d389fb4]
+Jul-20 16:58:35.657 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_02_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/f8/8df847a1f873bb776e6b5d026957ec]
+Jul-20 16:58:35.684 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:58:35.685 [Task submitter] INFO  nextflow.Session - [db/a1edd9] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_02_A)
+Jul-20 16:58:46.182 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_B); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/13/6bf615cf2f4b31a682474757555a6d]
+Jul-20 16:58:46.318 [Actor Thread 55] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/seqcluster:1.2.9--pyh5e36f6f_0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-seqcluster-1.2.9--pyh5e36f6f_0.img
+Jul-20 16:58:46.321 [Actor Thread 55] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/bioconvert:0.4.3--py_0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-bioconvert-0.4.3--py_0.img
+Jul-20 16:58:46.323 [Actor Thread 55] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/mulled-v2-ffbf83a6b0ab6ec567a336cf349b80637135bca3:40128b496751b037e2bd85f6789e83d4ff8a4837-0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-mulled-v2-ffbf83a6b0ab6ec567a336cf349b80637135bca3-40128b496751b037e2bd85f6789e83d4ff8a4837-0.img
+Jul-20 16:58:46.337 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:58:46.338 [Task submitter] INFO  nextflow.Session - [3c/52d1b8] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_B_seqcluster)
+Jul-20 16:58:46.402 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:58:46.402 [Task submitter] INFO  nextflow.Session - [05/94dfd0] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (RUGBY_01_B)
+Jul-20 16:59:05.923 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (RUGBY_01_B); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/05/94dfd0463290456a2bd99b91544e26]
+Jul-20 16:59:05.939 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:05.939 [Task submitter] INFO  nextflow.Session - [0d/da7ddd] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_B_mature)
+Jul-20 16:59:15.000 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_B); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/aa/28d8d7d7948bfd7f21626c747b5bf5]
+Jul-20 16:59:24.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (RUGBY_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ca/4088b6087ad41edacd4176b12a21e6]
+Jul-20 16:59:25.024 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:25.025 [Task submitter] INFO  nextflow.Session - [30/4b2382] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (RUGBY_01_A)
+Jul-20 16:59:25.038 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:25.038 [Task submitter] INFO  nextflow.Session - [20/98a342] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_A_seqcluster)
+Jul-20 16:59:25.051 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:25.052 [Task submitter] INFO  nextflow.Session - [94/abd5b2] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_A_mature)
+Jul-20 16:59:38.548 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/96/dcc36414ee6cb290d426468fd3a783]
+Jul-20 16:59:38.796 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:38.797 [Task submitter] INFO  nextflow.Session - [1e/31b3e9] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_01_A_seqcluster)
+Jul-20 16:59:40.699 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:40.700 [Task submitter] INFO  nextflow.Session - [3a/0b05b0] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (CTRL_01_A)
+Jul-20 16:59:40.794 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 16:59:40.795 [Task submitter] INFO  nextflow.Session - [93/59bc97] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_01_A_mature)
+Jul-20 16:59:45.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (RUGBY_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/30/4b2382210c5bc14247e9b640a11506]
+Jul-20 16:59:48.655 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (CTRL_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/5b/4423732fca21289243e966c65deab4]
+Jul-20 17:00:06.698 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (CTRL_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/3a/0b05b044271ab96d0ffb1860d10c56]
+Jul-20 17:00:17.660 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRTRACE:MIRTRACE_RUN; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/66/ce6a1b2321707a3e7d505d59b9e132]
+Jul-20 17:00:23.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:FASTQC (RUGBY_01_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/45/08e4f0070b58f123f9a85d39eb1da0]
+Jul-20 17:03:14.303 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: NFCORE_SMRNASEQ:SMRNASEQ:FASTQC_TRIMGALORE:TRIMGALORE (CTRL_02_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/db/a1edd91eca052dc9768f150d389fb4]
+Jul-20 17:03:14.339 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:03:14.340 [Task submitter] INFO  nextflow.Session - [46/6d004f] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (CTRL_02_A)
+Jul-20 17:03:14.351 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:03:14.351 [Task submitter] INFO  nextflow.Session - [7e/b72873] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_02_A_seqcluster)
+Jul-20 17:03:14.363 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:03:14.363 [Task submitter] INFO  nextflow.Session - [d9/4d978a] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_02_A_mature)
+Jul-20 17:03:28.115 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 9 -- submitted tasks are shown below
+~> TaskHandler[id: 20; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_B_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/3c/52d1b80a019a3e5a36bdb05de245c4]
+~> TaskHandler[id: 19; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_B_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/0d/da7dddc114773552ccad1a1b72276b]
+~> TaskHandler[id: 23; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/20/98a34239d7875ac6ea72b5c7127eeb]
+~> TaskHandler[id: 22; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/94/abd5b275f0a54e3724daf13a33a208]
+~> TaskHandler[id: 26; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_01_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/1e/31b3e908d68ef2bdfa31aaf2d7d566]
+~> TaskHandler[id: 25; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_01_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/93/59bc97a8b0c68f761ed6cf825797ef]
+~> TaskHandler[id: 27; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (CTRL_02_A); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/46/6d004f51486a1b670fa1fa6b8c86fe]
+~> TaskHandler[id: 28; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_02_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/b72873c82a195afabfa0d75da85f90]
+~> TaskHandler[id: 29; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_02_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/d9/4d978ab7d9cad9de8021c436f76c3c]
+Jul-20 17:03:32.272 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 27; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRDEEP2:MIRDEEP2_PIGZ (CTRL_02_A); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/46/6d004f51486a1b670fa1fa6b8c86fe]
+Jul-20 17:07:32.944 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_B_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/3c/52d1b80a019a3e5a36bdb05de245c4]
+Jul-20 17:07:32.991 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:07:32.991 [Task submitter] INFO  nextflow.Session - [0e/4679b9] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (RUGBY_01_B_seqcluster)
+Jul-20 17:08:07.694 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 30; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (RUGBY_01_B_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/0e/4679b9c1ab22bb9f9c00f9ff805eec]
+Jul-20 17:08:22.243 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (RUGBY_01_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/20/98a34239d7875ac6ea72b5c7127eeb]
+Jul-20 17:08:22.277 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:08:22.278 [Task submitter] INFO  nextflow.Session - [cf/1b81e5] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (RUGBY_01_A_seqcluster)
+Jul-20 17:08:28.150 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 7 -- submitted tasks are shown below
+~> TaskHandler[id: 19; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_B_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/0d/da7dddc114773552ccad1a1b72276b]
+~> TaskHandler[id: 22; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/94/abd5b275f0a54e3724daf13a33a208]
+~> TaskHandler[id: 26; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_01_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/1e/31b3e908d68ef2bdfa31aaf2d7d566]
+~> TaskHandler[id: 25; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_01_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/93/59bc97a8b0c68f761ed6cf825797ef]
+~> TaskHandler[id: 28; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_02_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/b72873c82a195afabfa0d75da85f90]
+~> TaskHandler[id: 29; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_02_A_mature); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/d9/4d978ab7d9cad9de8021c436f76c3c]
+~> TaskHandler[id: 31; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (RUGBY_01_A_seqcluster); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/cf/1b81e5f02d921103822d3c3616ef2f]
+Jul-20 17:09:07.652 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 31; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (RUGBY_01_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/cf/1b81e5f02d921103822d3c3616ef2f]
+Jul-20 17:09:24.149 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/0d/da7dddc114773552ccad1a1b72276b]
+Jul-20 17:09:24.169 [Actor Thread 56] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/samtools:1.15--h1170115_1; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-samtools-1.15--h1170115_1.img
+Jul-20 17:09:24.189 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:09:24.190 [Task submitter] INFO  nextflow.Session - [db/15ee5e] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_B_mature_hairpin)
+Jul-20 17:09:24.203 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:09:24.203 [Task submitter] INFO  nextflow.Session - [79/6003d7] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (RUGBY_01_B_mature)
+Jul-20 17:09:45.241 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/94/abd5b275f0a54e3724daf13a33a208]
+Jul-20 17:09:45.268 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:09:45.269 [Task submitter] INFO  nextflow.Session - [38/2a2ac1] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (RUGBY_01_A_mature)
+Jul-20 17:09:45.279 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:09:45.280 [Task submitter] INFO  nextflow.Session - [08/997996] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_A_mature_hairpin)
+Jul-20 17:09:55.971 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 32; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/79/6003d7579c2e967fa403089efe3949]
+Jul-20 17:09:56.152 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:09:56.153 [Task submitter] INFO  nextflow.Session - [a6/fa2ddb] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (RUGBY_01_B_mature)
+Jul-20 17:10:03.682 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 36; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/a6/fa2ddb265c7b2bf4c8615c066054ed]
+Jul-20 17:10:03.995 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:10:03.995 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:10:10.274 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 28; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_02_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/b72873c82a195afabfa0d75da85f90]
+Jul-20 17:10:10.533 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:10:10.533 [Task submitter] INFO  nextflow.Session - [12/919c1d] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (CTRL_02_A_seqcluster)
+Jul-20 17:10:19.387 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 34; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/38/2a2ac17692f54125fd3ecb688b2334]
+Jul-20 17:10:19.407 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:10:19.408 [Task submitter] INFO  nextflow.Session - [04/e6f11d] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (RUGBY_01_A_mature)
+Jul-20 17:10:25.433 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 38; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/04/e6f11d0d70ff5ed6ad6449f76384aa]
+Jul-20 17:10:25.438 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:10:25.439 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:10:39.778 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 37; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (CTRL_02_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/12/919c1d4d484ed1c2045ef544b2eb4b]
+Jul-20 17:11:35.922 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 29; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/d9/4d978ab7d9cad9de8021c436f76c3c]
+Jul-20 17:11:35.954 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:11:35.955 [Task submitter] INFO  nextflow.Session - [21/274b73] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (CTRL_02_A_mature)
+Jul-20 17:11:36.089 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:11:36.089 [Task submitter] INFO  nextflow.Session - [ee/6aba11] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_02_A_mature_hairpin)
+Jul-20 17:11:37.022 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 26; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:SEQCLUSTER_SEQUENCES (CTRL_01_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/1e/31b3e908d68ef2bdfa31aaf2d7d566]
+Jul-20 17:11:37.181 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:11:37.181 [Task submitter] INFO  nextflow.Session - [66/5c52ff] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (CTRL_01_A_seqcluster)
+Jul-20 17:12:05.133 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 39; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/21/274b7304401f64acad02d0d5bf6c06]
+Jul-20 17:12:05.307 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:05.307 [Task submitter] INFO  nextflow.Session - [bf/c97266] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (CTRL_02_A_mature)
+Jul-20 17:12:05.668 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 25; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_MATURE (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/93/59bc97a8b0c68f761ed6cf825797ef]
+Jul-20 17:12:05.690 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:05.690 [Task submitter] INFO  nextflow.Session - [98/8b04d9] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (CTRL_01_A_mature)
+Jul-20 17:12:05.767 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:05.768 [Task submitter] INFO  nextflow.Session - [7e/8c148b] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_01_A_mature_hairpin)
+Jul-20 17:12:12.702 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 42; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/bf/c97266d18fdc0266f374e86f97ecc8]
+Jul-20 17:12:12.987 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:12:12.987 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:12:39.966 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 43; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_SORT (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/98/8b04d98572b3ad85ff0a283452e92f]
+Jul-20 17:12:39.985 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:39.985 [Task submitter] INFO  nextflow.Session - [48/6ee167] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (CTRL_01_A_mature)
+Jul-20 17:12:47.520 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 45; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/48/6ee167e70b1a971564a897cac4cb4f]
+Jul-20 17:12:47.524 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:12:47.525 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:12:47.545 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.545 [Task submitter] INFO  nextflow.Session - [66/5aea58] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_01_A_mature)
+Jul-20 17:12:47.648 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.648 [Task submitter] INFO  nextflow.Session - [a4/f50073] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_02_A_mature)
+Jul-20 17:12:47.911 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.911 [Task submitter] INFO  nextflow.Session - [cc/1a841d] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_01_A_mature)
+Jul-20 17:12:47.922 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.922 [Task submitter] INFO  nextflow.Session - [05/5645c5] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_B_mature)
+Jul-20 17:12:47.940 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.940 [Task submitter] INFO  nextflow.Session - [bb/8baa64] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_02_A_mature)
+Jul-20 17:12:47.951 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.952 [Task submitter] INFO  nextflow.Session - [3c/3537d3] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_A_mature)
+Jul-20 17:12:47.964 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.964 [Task submitter] INFO  nextflow.Session - [3e/9c456b] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_B_mature)
+Jul-20 17:12:47.974 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.974 [Task submitter] INFO  nextflow.Session - [34/407b59] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_01_A_mature)
+Jul-20 17:12:47.983 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.984 [Task submitter] INFO  nextflow.Session - [be/8d2507] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_A_mature)
+Jul-20 17:12:47.993 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:47.994 [Task submitter] INFO  nextflow.Session - [cb/0fda04] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_A_mature)
+Jul-20 17:12:48.004 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:48.005 [Task submitter] INFO  nextflow.Session - [11/9378b8] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_02_A_mature)
+Jul-20 17:12:48.017 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:12:48.018 [Task submitter] INFO  nextflow.Session - [71/7464ad] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_B_mature)
+Jul-20 17:12:48.334 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 53; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/a4/f50073e407239406a4b3104ce31d37]
+Jul-20 17:12:48.358 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 56; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/66/5aea5884c5c999ce5cacbb60656dfa]
+Jul-20 17:12:48.393 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 49; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/be/8d2507939b722be71e0efe7d1d44d1]
+Jul-20 17:12:48.417 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 47; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/3e/9c456beb27cf228d5b8d1a86336518]
+Jul-20 17:12:53.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 54; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/bb/8baa64723c0293a16d2a78b21fc530]
+Jul-20 17:12:54.150 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 50; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/cb/0fda04ebbf164a98f0cc7eee2a2935]
+Jul-20 17:12:54.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 46; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/05/5645c5dd14310e80a5914703a4b81f]
+Jul-20 17:12:54.957 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 57; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/cc/1a841d283dec41687687a1e3c7e951]
+Jul-20 17:13:11.867 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 41; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_SEQCLUSTER (CTRL_01_A_seqcluster); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/66/5c52ff8999cf8b31e3222350cc6d68]
+Jul-20 17:13:12.090 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 52; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_02_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/11/9378b8c34bfa8b8f8ca149d64db08a]
+Jul-20 17:13:12.693 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 51; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/3c/3537d3bc4fa518e1b09fe097d220c3]
+Jul-20 17:13:12.888 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 48; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_B_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/71/7464adb42a74b4b50753c0648609c4]
+Jul-20 17:13:14.638 [FileTransfer-4] DEBUG nextflow.file.FilePorter - Copying foreign file https://mirbase.org/ftp/CURRENT/genomes/hsa.gff3 to work dir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/stage/b4/55bc9340680be2f5e509e1fed437fa/hsa.gff3
+Jul-20 17:13:16.638 [Actor Thread 58] INFO  nextflow.file.FilePorter - Staging foreign file: https://mirbase.org/ftp/CURRENT/genomes/hsa.gff3
+Jul-20 17:13:16.791 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 55; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_MATURE:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_01_A_mature); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/34/407b593ea92e93f1a52fef8b15cb3f]
+Jul-20 17:13:18.136 [Actor Thread 65] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/mulled-v2-0c13ef770dd7cc5c76c2ce23ba6669234cf03385:63be019f50581cc5dfe4fc0f73ae50f2d4d661f7-0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-mulled-v2-0c13ef770dd7cc5c76c2ce23ba6669234cf03385-63be019f50581cc5dfe4fc0f73ae50f2d4d661f7-0.img
+Jul-20 17:13:18.173 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:13:18.173 [Task submitter] INFO  nextflow.Session - [bd/f93115] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT
+Jul-20 17:13:28.201 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 5 -- submitted tasks are shown below
+~> TaskHandler[id: 33; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_B_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/db/15ee5e65f847f08f180ed23d10d43d]
+~> TaskHandler[id: 35; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/08/997996db52f81324d46e27d22a3144]
+~> TaskHandler[id: 40; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_02_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ee/6aba11c97555825b6337f93a05b97a]
+~> TaskHandler[id: 44; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_01_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/8c148b8c746610bb256d743eeac85d]
+~> TaskHandler[id: 58; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT; status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/bd/f9311582dd95cc27803b5c771349a4]
+Jul-20 17:14:48.942 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 58; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:MIRTOP_QUANT; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/bd/f9311582dd95cc27803b5c771349a4]
+Jul-20 17:14:48.961 [Actor Thread 66] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/r-data.table:1.12.2; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-r-data.table-1.12.2.img
+Jul-20 17:14:48.962 [Actor Thread 68] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/bin/collapse_mirtop.r
+Jul-20 17:14:49.007 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:14:49.008 [Task submitter] INFO  nextflow.Session - [4e/b7c5bf] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE
+Jul-20 17:14:51.965 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 59; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:TABLE_MERGE; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/4e/b7c5bf60ea84da2f37101d70b343f9]
+Jul-20 17:18:28.283 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[id: 33; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_B_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/db/15ee5e65f847f08f180ed23d10d43d]
+~> TaskHandler[id: 35; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/08/997996db52f81324d46e27d22a3144]
+~> TaskHandler[id: 40; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_02_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ee/6aba11c97555825b6337f93a05b97a]
+~> TaskHandler[id: 44; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_01_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/8c148b8c746610bb256d743eeac85d]
+Jul-20 17:20:06.730 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 33; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/db/15ee5e65f847f08f180ed23d10d43d]
+Jul-20 17:20:06.768 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:20:06.769 [Task submitter] INFO  nextflow.Session - [f2/0757c3] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (RUGBY_01_B_mature_hairpin)
+Jul-20 17:20:11.941 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 40; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ee/6aba11c97555825b6337f93a05b97a]
+Jul-20 17:20:11.968 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:20:11.968 [Task submitter] INFO  nextflow.Session - [d5/c1f3d4] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (CTRL_02_A_mature_hairpin)
+Jul-20 17:20:37.859 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 61; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/d5/c1f3d480fcc2278db1ec7979fb313e]
+Jul-20 17:20:37.882 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:20:37.883 [Task submitter] INFO  nextflow.Session - [39/d83ab5] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (CTRL_02_A_mature_hairpin)
+Jul-20 17:20:38.189 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 60; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/f2/0757c3e13d7ac358de3d44266c6577]
+Jul-20 17:20:38.212 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:20:38.213 [Task submitter] INFO  nextflow.Session - [95/d2eeb2] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (RUGBY_01_B_mature_hairpin)
+Jul-20 17:20:43.013 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 62; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/39/d83ab511ab7227e72c3128e348c6f6]
+Jul-20 17:20:43.020 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:20:43.020 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:20:45.136 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 35; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/08/997996db52f81324d46e27d22a3144]
+Jul-20 17:20:45.355 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 63; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/95/d2eeb241b78d40915b2b4edefd0e2b]
+Jul-20 17:20:45.438 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:20:45.438 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:20:45.490 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:20:45.490 [Task submitter] INFO  nextflow.Session - [46/26db07] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (RUGBY_01_A_mature_hairpin)
+Jul-20 17:21:15.782 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 64; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/46/26db07f45ca7905de27f35c55498c2]
+Jul-20 17:21:15.817 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:21:15.818 [Task submitter] INFO  nextflow.Session - [b2/2e135e] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (RUGBY_01_A_mature_hairpin)
+Jul-20 17:21:21.296 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 65; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/b2/2e135e624422a9a4a3332d56ede23e]
+Jul-20 17:21:21.302 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:21:21.302 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:23:28.335 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[id: 44; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_01_A_mature_hairpin); status: RUNNING; exit: -; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/8c148b8c746610bb256d743eeac85d]
+Jul-20 17:25:14.171 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 44; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BOWTIE_MAP_HAIRPIN (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/7e/8c148b8c746610bb256d743eeac85d]
+Jul-20 17:25:14.215 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:14.216 [Task submitter] INFO  nextflow.Session - [16/b2eba1] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (CTRL_01_A_mature_hairpin)
+Jul-20 17:25:51.325 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 66; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_SORT (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/16/b2eba10e3c1937f26500e3f6b0bbd3]
+Jul-20 17:25:51.389 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:51.390 [Task submitter] INFO  nextflow.Session - [15/f19e06] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (CTRL_01_A_mature_hairpin)
+Jul-20 17:25:57.757 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 67; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/15/f19e06f8c931a0e7535bab26db6582]
+Jul-20 17:25:57.766 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<1:1>
+Jul-20 17:25:57.767 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:SAMTOOLS_INDEX > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Jul-20 17:25:57.797 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.797 [Task submitter] INFO  nextflow.Session - [bb/9fcebb] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_A_mature_hairpin)
+Jul-20 17:25:57.838 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.838 [Task submitter] INFO  nextflow.Session - [34/23824c] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_B_mature_hairpin)
+Jul-20 17:25:57.849 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.850 [Task submitter] INFO  nextflow.Session - [8c/d901b9] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_01_A_mature_hairpin)
+Jul-20 17:25:57.863 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.863 [Task submitter] INFO  nextflow.Session - [42/63c3e6] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_01_A_mature_hairpin)
+Jul-20 17:25:57.876 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.876 [Task submitter] INFO  nextflow.Session - [cf/62e39a] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_A_mature_hairpin)
+Jul-20 17:25:57.887 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.887 [Task submitter] INFO  nextflow.Session - [0e/df4831] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_02_A_mature_hairpin)
+Jul-20 17:25:57.900 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.900 [Task submitter] INFO  nextflow.Session - [12/83cf24] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_B_mature_hairpin)
+Jul-20 17:25:57.910 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.910 [Task submitter] INFO  nextflow.Session - [f6/08d556] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_02_A_mature_hairpin)
+Jul-20 17:25:57.921 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.921 [Task submitter] INFO  nextflow.Session - [ea/1c8854] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_B_mature_hairpin)
+Jul-20 17:25:57.931 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.932 [Task submitter] INFO  nextflow.Session - [33/7ff6ec] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_02_A_mature_hairpin)
+Jul-20 17:25:57.943 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.944 [Task submitter] INFO  nextflow.Session - [ea/998fc7] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_01_A_mature_hairpin)
+Jul-20 17:25:57.963 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:57.964 [Task submitter] INFO  nextflow.Session - [dd/316fac] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_A_mature_hairpin)
+Jul-20 17:25:58.310 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 74; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/bb/9fcebb0d3392a754f4de549e12636a]
+Jul-20 17:25:58.323 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 78; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/8c/d901b908b066f664d26e2314bda587]
+Jul-20 17:25:58.364 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 71; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ea/1c8854807d6fd0f6fceb39833fe49e]
+Jul-20 17:25:58.374 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 68; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/f6/08d55676fbaba6750990aa15556152]
+Jul-20 17:25:58.384 [Actor Thread 54] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/mulled-v2-419bd7f10b2b902489ac63bbaafc7db76f8e0ae1:709335c37934db1b481054cbec637c6e5b5971cb-0; path=/NGS/scratch/KSCBIOM/HumanGenomics/containers/depot.galaxyproject.org-singularity-mulled-v2-419bd7f10b2b902489ac63bbaafc7db76f8e0ae1-709335c37934db1b481054cbec637c6e5b5971cb-0.img
+Jul-20 17:25:58.385 [Actor Thread 70] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /home/lkemp/.nextflow/assets/nf-core/smrnaseq/bin/edgeR_miRBase.r
+Jul-20 17:25:58.401 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-20 17:25:58.401 [Task submitter] INFO  nextflow.Session - [ab/6bf6d6] Submitted process > NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC
+Jul-20 17:26:02.530 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 70; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/33/7ff6ec0a99e17f56b8bbf19a79f1bb]
+Jul-20 17:26:03.411 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 75; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/cf/62e39a9a0f7dce96a2c43acd36ea74]
+Jul-20 17:26:03.450 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 72; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/34/23824cfac9330eff6cbd2af279de28]
+Jul-20 17:26:04.619 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 77; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/42/63c3e615ab93bd39c7661c1afc50e3]
+Jul-20 17:26:08.776 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 80; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:EDGER_QC; status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ab/6bf6d68f0e65c8b3915aecaa4a7a35]
+Jul-20 17:26:17.878 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 69; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_02_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/0e/df4831404891f3c619a438ed477cbd]
+Jul-20 17:26:21.716 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 73; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_B_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/12/83cf243558c0c6423984db45204190]
+Jul-20 17:26:22.882 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 76; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (RUGBY_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/dd/316fac33483bd9025c417da269e71c]
+Jul-20 17:26:27.263 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 79; name: NFCORE_SMRNASEQ:SMRNASEQ:MIRNA_QUANT:BAM_STATS_HAIRPIN:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS (CTRL_01_A_mature_hairpin); status: COMPLETED; exit: 0; error: -; workDir: /NGS/scratch/KSCBIOM/HumanGenomics/hg_compute_resource_requirements/tmp/concussion_smrnaseq/ea/998fc76cf79e592f0431b21a2a8a5b]

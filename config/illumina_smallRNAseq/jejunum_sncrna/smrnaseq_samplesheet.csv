@@ -1,0 +1,5 @@
+sample,fastq_1
+J620,./fastq/jejunum_sncrna/J620.fastq.gz
+J631,./fastq/jejunum_sncrna/J631.fastq.gz
+J633,./fastq/jejunum_sncrna/J633.fastq.gz
+J639,./fastq/jejunum_sncrna/J639.fastq.gz

@@ -1,0 +1,19 @@
+
+Configuring conda
+
+no change     /home/lkemp/miniconda3/condabin/conda
+no change     /home/lkemp/miniconda3/bin/conda
+no change     /home/lkemp/miniconda3/bin/conda-env
+no change     /home/lkemp/miniconda3/bin/activate
+no change     /home/lkemp/miniconda3/bin/deactivate
+no change     /home/lkemp/miniconda3/etc/profile.d/conda.sh
+no change     /home/lkemp/miniconda3/etc/fish/conf.d/conda.fish
+no change     /home/lkemp/miniconda3/shell/condabin/Conda.psm1
+no change     /home/lkemp/miniconda3/shell/condabin/conda-hook.ps1
+no change     /home/lkemp/miniconda3/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /home/lkemp/miniconda3/etc/profile.d/conda.csh
+no change     /home/lkemp/.bashrc
+No action taken.
+
+Creating conda environment with nextflow installed
+
