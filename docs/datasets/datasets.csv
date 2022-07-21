@@ -1,0 +1,21 @@
+dataset,dataset_type,no_samples,raw_data_size,avg_raw_data_size_per_sample,analysis state
+WellintonGeneticsLab,WES,10,43G,4.30G,analysed
+colorectal_sncrna,smallRNAseq,55,21G,0.38G,analysed
+concussion_sncrna,smallRNAseq,48,181G,3.77G,in progress
+covid_sncrna_exp01,smallRNAseq,33,16G,0.48G,analysed
+covid_sncrna_exp02,smallRNAseq,28,12G,0.43G,analysed
+covid_sncrna_exp03,smallRNAseq,29,18G,0.62G,analysed
+GA_clinical_wgs (phase 1),WGS,59,6042G,102.41G,analysed
+GA_clinical_wgs (phase 2),WGS,2,207G,103.50G,analysed
+hps_sncrna,smallRNAseq,72,27G,0.37G,analysed - likely to be re-analysed
+hyperparathyroid_epilepsy_exome_run1,WES,8,74G,9.25G,analysed
+hyperparathyroid_epilepsy_exome_run2,WES,8,132G,16.50G,analysed
+hyperparathyroid_epilepsy_exome_run3,WES,8,136G,17.00G,analysed
+hyperparathyroid_epilepsy_exome_run4,WES,8,119G,14.87G,analysed
+hyperparathyroid_epilepsy_exome_run5,WES,8,104G,13.00G,analysed
+hyperparathyroid_epilepsy_exome_run6,WES,8,118G,14.75G,analysed
+jejunum_rna,RNAseq,22,44G,2.00G,analysed - likely to be re-analysed
+jejunum_rna_2,RNAseq,74,750G,10.13G,in progress
+jejunum_sncrna,smallRNAseq,20,14G,0.70G,analysed - likely to be re-analysed
+jejunum_sncrna_2,smallRNAseq,94,327G,3.48G,to be analysed
+W15_160_TCS,smallRNAseq,,126G,to be analysed?
