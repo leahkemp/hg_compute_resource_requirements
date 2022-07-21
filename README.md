@@ -20,7 +20,7 @@ Minimal tests for the amount of compute resources required for analysing human g
 
 ## ESR human genomics datasets
 
-- [Datasets](./docs/datasets/datasets.md)
+- [Datasets](./docs/datasets/datasets.csv)
 
 ## Resources
 
