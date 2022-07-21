@@ -3,7 +3,8 @@ fastq/
 
 fastq_raw/
 
-results/
+results/illumina*
+reuslts/nanopore*
 
 .nextflow/
 

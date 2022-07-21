@@ -1,0 +1,3 @@
+dataset,data_type,no_samples,pipeline,pipeline_version
+concussion_sncrna,smallRNAseq,4,smrnaseq,2.0.0
+jejunum_sncrna,smallRNAseq,4,smrnaseq,2.0.0
