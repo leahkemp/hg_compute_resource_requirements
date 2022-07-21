@@ -1,0 +1,7 @@
+name: concussion_smrnaseq_pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - nextflow=22.04.0

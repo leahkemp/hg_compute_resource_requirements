@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2,strandedness
+J620,./fastq/jejunum_rna/J620.fastq.gz,,reverse
+J631,./fastq/jejunum_rna/J631.fastq.gz,,reverse
+J633,./fastq/jejunum_rna/J633.fastq.gz,,reverse
+J639,./fastq/jejunum_rna/J639.fastq.gz,,reverse

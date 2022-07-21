@@ -1,4 +1,4 @@
-name: smrnaseq_pipeline
+name: jejunum_smrnaseq_pipeline
 channels:
   - conda-forge
   - bioconda

@@ -1,0 +1,7 @@
+name: jejunum_rnaseq_pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - nextflow=22.04.0

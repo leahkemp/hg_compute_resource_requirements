@@ -24,8 +24,8 @@ echo ""
 echo "Creating conda environment with nextflow installed"
 echo ""
 
-mamba env create --force -f $project_dir/scripts/envs/conda.nextflow.22.04.0.yml
-conda activate nextflow
+mamba env create --force -f $project_dir/scripts/envs/conda.nextflow.22.04.0_concussion.yml
+conda activate concussion_smrnaseq_pipeline
 
 # run smrnaseq pipeline
 echo ""
