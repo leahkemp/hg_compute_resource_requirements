@@ -24,7 +24,7 @@ Minimal tests for the amount of compute resources required for analysing human g
 
 ## Resources
 
-- Temporary space requirements eg. for pipeline runs
+- [Resource use](./results/resource_use.csv)
 
 ## To do
 
