@@ -1,2 +1,2 @@
 dataset,data_type,no_samples,raw_data_size,pipeline,pipeline_version,estimated_results_space,estimated_tmp_space,estimated_total_space,actual_results_space,actual_tmp_space,actual_total_space
-concussion_sncrna,smallRNAseq,48,181G,https://github.com/nf-core/smrnaseq,2.0.0,687.8G,2.8T,3.5T,,,
+concussion_sncrna,smallRNAseq,48,181G,https://github.com/nf-core/smrnaseq,2.0.0,687.8G,2.8T,3.5T,587G,,
