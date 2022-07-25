@@ -25,7 +25,7 @@ Minimal tests for the amount of compute resources required for analysing human g
 ## Resources
 
 - [Estimated resource use based on tests](./results/resource_use.csv)
-- [Estimated and actual resource use for entire dataset](./results/resource_estimated_actual.csv)
+- [Estimated and actual resource use for entire dataset](./results/resources_estimated_actual.csv)
 
 ## To do
 
