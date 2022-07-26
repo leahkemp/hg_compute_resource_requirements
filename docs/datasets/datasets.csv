@@ -19,4 +19,4 @@ jejunum_rna_2,RNAseq,74,750G,10.13G,in progress
 jejunum_sncrna,smallRNAseq,20,14G,0.70G,analysed - likely to be re-analysed
 jejunum_sncrna_2,smallRNAseq,94,327G,3.48G,to be analysed
 W15_160_TCS,smallRNAseq,,126G,,to be analysed? I don't know what this is
-ont_methylation_adipose,nanopore,1,367G,,to be analysed?
+ont_methylation_adipose,nanopore,1,367G,,to be analysed? Analyse on Leviathan?
