@@ -26,6 +26,7 @@ Minimal tests for the amount of compute resources required for analysing human g
 
 - [Estimated resource use based on tests](./results/resource_use.csv)
 - [Estimated and actual resource use for entire dataset](./results/resources_estimated_actual.csv)
+- [Estimated file sizes for clinical genomics](./results/clinical_genomics_file_sizes.md)
 
 ## To do
 
